@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, blue, rgb(173, 173, 1)); /* Sfondo gradiente */
+}
+header{
+    height: 200px;
+}
+section{
+    height: 600px;
+}
+
+.points{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.points h2{
+    font-size: 30px;
+}
+.points p {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+}
+.start { 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.start h1{
+    font-size: 65px;
+}
+
+.start button { /* Bottone start */
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    color: white;
+    background: black;
+    font-size: 25px;
+    border-radius: 15px; /* arrotonda angoli */
+}
+
+.vs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.vs .ps_win {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+
+}
+.vs .check{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+.vs .launch{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.vs button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    border: 0px;
+    font-size: 20px;
+}
+
+.player_game {
+     transform: rotateY(180deg); /* per girare l`immagine di 180gradi */
+}
+
+.ps_winend {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.ps_winend h1 {
+    font-size: 65px;
+}
+
+.ps_winend button {
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    color: white;
+    background: black;
+    font-size: 25px;
+    border-radius: 15px; /* arrotonda angoli */
+}
+
+.gameout /* quando non e in start il gioco */
+ { 
+    opacity: 0; /* per renderlo trasparente */
+    pointer-events: none; /* per non far funzionare i click con mouse */
+}
+
+.gamein  /* quando e´ in start il gioco */
+{
+    opacity: 1; /* per renderlo visibile */
+    pointer-events: all; /* per far funzionare i click con mouse */
+}
